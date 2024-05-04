@@ -1,0 +1,4 @@
+name: LifestealCore
+version: '${project.version}'
+main: org.sparnet.lifestealcore.LifestealCore
+api-version: '1.20'
