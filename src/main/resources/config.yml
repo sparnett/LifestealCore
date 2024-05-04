@@ -1,0 +1,40 @@
+###########################################
+#             Configuration               #
+#           Plugin by SparnetXD           #
+###########################################
+
+#README: 1=HALF A HEART
+
+DefaultHealth: 20.0
+
+HealthGainedOnKill: 2.0
+
+LoseLifeIfNotKilledByPlayer: false
+
+BanIfLoseAllLives: false
+
+MaxHealth: 40.0
+
+DropHeartsOnDeath: true
+
+HeartRecipe:
+  Slot0: DIAMOND_BLOCK
+  Slot1: OBSIDIAN
+  Slot2: DIAMOND_BLOCK
+  Slot3: GOLD_BLOCK
+  Slot4: NETHERITE_INGOT
+  Slot5: GOLD_BLOCK
+  Slot6: DIAMOND_BLOCK
+  Slot7: OBSIDIAN
+  Slot8: DIAMOND_BLOCK
+
+ReviveTotemRecipe:
+  Slot0: TOTEM_OF_UNDYING
+  Slot1: DIAMOND_BLOCK
+  Slot2: TOTEM_OF_UNDYING
+  Slot3: NETHERITE_INGOT
+  Slot4: EMERALD
+  Slot5: NETHERITE_INGOT
+  Slot6: TOTEM_OF_UNDYING
+  Slot7: DIAMOND_BLOCK
+  Slot8: TOTEM_OF_UNDYING

@@ -1,4 +1,56 @@
-name: LifestealCore
-version: '${project.version}'
+name: LifeStealCore
+version: ${project.version}
 main: org.sparnet.lifestealcore.LifestealCore
-api-version: '1.20'
+api-version: 1.16
+authors: [ SparnetXD ]
+description: LifestealCore, Allows Players to Steal Hearts from Each Other by Killing.
+website: https://youtube.com/sparnet_
+
+commands:
+
+  withdraw:
+    description: Allows you to give your hearts to other people developed by SparnetXD
+    permission: lifesteal.withdraw
+    permission-message: "§cYou Do Not Have Permission to Use This Command"
+    usage: "§cUsage: /withdraw [Number of Hearts] [Player]"
+
+  smpreset:
+    description: Will reset all of the Hearts on the server developed by SparnetXD
+    permission: lifesteal.smpreset
+    permission-message: "§cYou Do Not Have Permission to Use This Command"
+    usage: "§cUsage: /smpreset"
+
+  revive:
+    description: Will revive a Player and set them at Default health developed by SparnetXD
+    permission: lifesteal.revive
+    permission-message: "§cYou Do Not Have Permission to Use This Command"
+    usage: "§cUsage: /revive [Player]"
+
+  addhearts:
+    description: Can Add or Remove Hearts from Players developed by SparnetXD
+    permission: lifesteal.addhearts
+    permission-message: "§cYou Do Not Have Permission to Use This Command"
+    usage: "§cUsage: /addhearts [Number of Hearts to Add/Subtract] [Player]"
+
+permissions:
+
+  lifesteal.*:
+    description: Allows player to use all commands developed by SparnetXD
+    children:
+      lifesteal.smpreset: true
+      lifesteal.addhearts: true
+      lifesteal.revive: true
+      lifesteal.withdraw: true
+
+  lifesteal.smpreset:
+    description: Allows player to use /smpreset developed by SparnetXD
+
+  lifesteal.addhearts:
+    description: Allows player to use /addhearts developed by SparnetXD
+
+  lifesteal.revive:
+    description: Allows player to use /revive developed by SparnetXD
+
+  lifesteal.withdraw:
+    description: Allows player to use /withdraw developed by SparnetXD
+    default: true
